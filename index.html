@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSMurcia</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://kit.fontawesome.com/a2977c897f.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header class="header">
+        <div class="container__header"> 
+            
+            <div class="container__header-logo">
+                <img src="./img/logo.png" alt="Logo" >
+            </div>
+            <nav class="container__header-menu">
+                <a href="#acercaDeMi">Acerca de mi</a>
+                <a href="#proyect">Proyectos</a>
+                <a href="#formulario">Contacto</a>
+            </nav>
+            <div class="container__header-iconMenu">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <section class="main__img">
+            <h2>HOLA!!! <br> Yo soy Sebastian
+
+            </h2>
+        </section>
+        <section class="main__info">
+                <div class="main__info-foto">
+                    <img src="./img/foto.jpg" alt="creador">
+                </div>
+                <h3 id="acercaDeMi">Acerca de mi</h3>
+                <p>Soy una persona que esta en constante aprendisaje e implementacion, en el transcurso de mi formacion he desarrollado diferentes proyectos los cuales han aportado experiencia y pasion a lo que hago.</p>
+        </section>
+        <section class="main__proyect">
+            <h3 class="main__proyect-h3" id="proyect">Proyectos</h3>
+            <div class="carrusel">
+                <div class="itemCArrusel" id="target-1">
+                    <div class="targetaCarrusel" >
+                        <div class="targetaCarrusel-1-img">
+                            <img src="./img/proyecto 1.png" alt="Proyecto1">
+                        </div>
+                        <div class="targetaCarrusel-1-text">
+                            <h3>Pagina tributo</h3>
+                            <p>Landin page estatica con implementacion de lenguaje HTML y CSS</p>
+                            <a href="https://jsmurcia.github.io/tributo/" target="_blank">Despliege</a>
+                        </div>
+                    </div>
+                    <div class="flechasCarrusel">
+                        <a href="#target-3"><i class="fas fa-angle-double-left"></i></a>
+                        <a href="#target-2"><i class="fas fa-angle-double-right"></i></a>
+                    </div>
+                </div>
+                <div class="itemCArrusel" id="target-2">
+                    <div class="targetaCarrusel">
+                        <div class="targetaCarrusel-2-img">
+                            <img src="./img/proyecto 2.png" alt="Proyecto1">
+                        </div>
+                        <div class="targetaCarrusel-2-text">
+                            <h3>Juego Ahorcado</h3>
+                            <p>Replica juego ahorcado en la cual se implemento lenguaje HTML, CSS y Java Script</p>
+                            <a href="https://tetrisprogramate.netlify.app/" target="_blank">Despliege</a>
+                        </div>
+                    </div>
+                    <div class="flechasCarrusel">
+                        <a href="#target-1"><i class="fas fa-angle-double-left"></i></a>
+                        <a href="#target-3"><i class="fas fa-angle-double-right"></i></a>
+                    </div>
+                </div>
+                <div class="itemCArrusel" id="target-3">
+                    <div class="targetaCarrusel">
+                        <div class="targetaCarrusel-3-img">
+                            <img src="./img/proyecto3.png" alt="Proyecto1">
+                        </div>
+                        <div class="targetaCarrusel-3-text">
+                            <h3>Juego Tetris</h3>
+                            <p>Replica juego ahorcado en la cual se implemento lenguaje HTML, CSS y Java Script</p>
+                            <a href="https://tetrisprogramate.netlify.app/" target="_blank">Despliege</a>
+                        </div>
+                    </div>
+                    <div class="flechasCarrusel">
+                        <a href="#target-2"><i class="fas fa-angle-double-left"></i></a>
+                        <a href="#target-1"><i class="fas fa-angle-double-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+<!-- contact form -->
+        <form action="" class="formulario" id="formulario">
+            <!-- group:name -->
+            <div class="formulario__grupo" id="grupo__nombre">
+                <label for="nombre" class="formulario__label">Nombre</label>
+                <div class="formulario__grupo-input">
+                    <input type="text" class="formulario__input" name="nombre" id="nombre" placeholder="jhon Doe">
+                    <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                </div>
+                <p class="formulario__input-error">El nombre tiene que ser entre 4 y 16 solo puede contener letras numeros y guion bajo.</p>
+            </div>
+            <!-- Group: telephone number -->
+            <div class="formulario__grupo" id="grupo__telefono">
+				<label for="telefono" class="formulario__label">Teléfono</label>
+				<div class="formulario__grupo-input">
+					<input type="text" class="formulario__input" name="telefono" id="telefono" placeholder="4491234567">
+					<i class="formulario__validacion-estado fas fa-times-circle"></i>
+				</div>
+				<p class="formulario__input-error">El telefono solo puede contener numeros dentro de un rango de 4 a 14 dígitos.</p>
+			</div>
+            <!-- Group:e-mail -->
+            <div class="formulario__grupo" id="grupo__correo">
+                <label for="correo" class="formulario__label">Correo</label>
+                <div class="formulario__grupo-input">
+                    <input type="email" class="formulario__input" name="correo" id="correo" placeholder="Correo@coreo.com">
+                    <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                </div>
+                <p class="formulario__input-error">El correo debe contar con un dominio y solo puede contener letras, numeros, @, puntos, guiones.</p>
+            </div>
+            <!-- Group:message -->
+            <div class="formulario__grupo" id="grupo__usuario">
+                <label for="usuario" class="formulario__label">Mensaje</label>
+                <div class="formulario__grupo-input">
+                    <input type="text" class="formulario__input" name="usuario" id="usuario" placeholder="Mensaje">
+                    <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                </div>
+                <p class="formulario__input-error">El mensaje solo puede contener letras numeros y guion bajo con una maximo de 200 caracteres</p>
+            </div>
+            <!-- group:terms and consitions -->
+            <div class="formulario__grupo" id="grupo__terminos">
+				<label class="formulario__label">
+					<input class="formulario__checkbox" type="checkbox" name="terminos" id="terminos">
+					Acepto los Terminos y Condiciones
+				</label>
+			</div>
+            <!-- Group: massage error -->
+            <div class="formulario__mensaje" id="formulario__mensaje">
+				<p><i class="fas fa-exclamation-triangle"></i> <b>Error:</b> Por favor rellena el formulario correctamente, acepta terminos y condiciones. </p>
+			</div>
+            <!--Group: button and masage success-->
+            <div class="formulario__grupo formulario__grupo-btn-enviar">
+				<button type="submit" class="formulario__btn">Enviar</button>
+				<p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Formulario enviado exitosamente!</p>
+			</div>
+        </form>
+        <!------------------------------------------- footer ------------------------------------>
+        <footer class="footer">
+            <div class="footer__cont">
+                <a href="https://github.com/jsmurcia" class="footer__icon footer-a github"  target="_blank"><i class="fab fa-github "></i></a>
+                <a href="https://www.linkedin.com/in/JSebastianMurcia" class="footer__icon footer-a linkedin" target="_blank"><i class="fab fa-linkedin "></i></a>
+                <a href="https://www.facebook.com/sebastian.murcia.399/" class="footer__icon footer-a facebook"  target="_blank"><i class="fab fa-facebook-square "></i></a>
+            </div>
+        </footer>
+    </main>
+    <script src="./js/script.js"></script>
+</body>
+</html>

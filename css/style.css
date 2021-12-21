@@ -1,0 +1,480 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&family=VT323&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box  ;
+    
+}
+html{
+	scroll-behavior: smooth;
+}
+/*------------------------style header-----------------------*/
+.header{
+    width: 100%;
+    height: 100px;
+    background-color:#4B5D6A;
+   
+}
+.container__header{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.container__header-logo{
+    height: 90px;
+}
+.container__header-logo img{
+    height: 100%;
+    border-radius: 50%;
+    margin-top: 5px;
+}
+.container__header-menu{
+    margin-top: 30px;
+    line-height: 40px;
+}
+.container__header-menu a{
+    text-decoration: none;
+    display: inline-block;
+    font-size: 25px;
+    margin-left: 25px;
+    color: #fff;
+    transition: all 500ms ease;
+    border-bottom: 4px solid transparent;
+
+}
+.container__header-menu a:hover{
+    color: #F0A500;
+    border-bottom: 4px solid #F0A500;
+
+}
+.container__header-iconMenu{
+    display: none;
+}
+/*----------------------- style main-------------------*/
+.main__img{
+    height: 480px;
+    width: 100%;
+    background: url(../img/fondo.png);
+    background-position: center;
+    overflow: hidden;
+}
+.main__img h2{
+    color: #fff;
+    text-align: center;
+    padding-top: 100px;
+    font-size: 50px;
+}
+/*-------------------------style section info------------------*/
+.main__info-foto{
+    margin-top: -200px;
+}
+.main__info img{
+    width: 400px;
+    border: 5px solid rgba(255, 255, 255,.2 );
+    border-radius: 50%;
+    vertical-align: top;
+}
+.main__info{
+    text-align: center;
+}
+.main__info h3{
+    font-size: 40px;
+    margin-top: 250px;
+    
+}
+.main__info p{
+   
+    width: 75%;
+    font-size: 25px;
+    margin: 0 auto;
+    font-family: 'Roboto', sans-serif;
+    font-weight:400;
+    margin-top: 30px;
+    margin-bottom: 250px;
+}
+/*---------------------------style carrusel----------------------*/
+.main__proyect-h3{
+    text-align: center;
+    font-size: 40px;
+    padding: 20px;
+}
+.main__proyect{
+    width: 100%;
+    height: 900px;
+    background: #DFDEDA;
+    margin: 0 auto;
+    
+}
+.carrusel{
+    width: 80%;
+    height:800px;
+    margin-top: 20px;
+    margin: 0 auto;
+    overflow: hidden;
+    /* border: 2px solid #000; */
+}
+.itemCArrusel{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    margin: 0 auto;
+    /* border: 2px solid blueviolet;  */
+}
+
+.targetaCarrusel{
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;    
+}
+
+.flechasCarrusel{
+    width: 100%;
+    height: 70%;
+    position: absolute;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    z-index: 5;
+    font-size: 40px;
+    /* border:2px solid yellow */
+    
+}
+/*----------------------style card1---------------------*/
+.targetaCarrusel-1-img{
+    margin-left: 9%;
+    margin-top: 20px;
+}
+.targetaCarrusel-1-img img {
+    width: 90%;
+    border-radius: 10px;
+}
+.targetaCarrusel-1-text{
+    font-family: 'Roboto', sans-serif;
+    margin-left: 9%;
+    padding: 20px;
+    line-height: 40px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.targetaCarrusel-1-text h3{
+    font-size: 30px;
+}
+.targetaCarrusel-1-text p{
+    font-size: 25px;
+    margin-top: 40px;
+    margin-bottom: 95px;
+}
+.targetaCarrusel-1-text a{
+    font-size: 25px;
+    text-decoration: none;
+    background-color: #fff;
+    padding: 5px 9px;
+    border-radius: 8px;
+    color: #000;
+    width: 200px;
+    margin: 0 auto;
+    text-align: center
+    
+}
+.targetaCarrusel-1-text a:hover{
+    cursor: pointer;
+    background-color: black;
+    color:blanchedalmond
+}
+/*-------------------------style card2--------------------------*/
+.targetaCarrusel-2-img{
+    margin-left: 9%;
+    margin-top: 20px;
+}
+.targetaCarrusel-2-img img {
+    width: 90%;
+    border-radius: 10px;
+}
+.targetaCarrusel-2-text{
+    font-family: 'Roboto', sans-serif;
+    margin-left: 9%;
+    padding: 20px;
+    line-height: 40px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.targetaCarrusel-2-text h3{
+    font-size: 30px;
+}
+.targetaCarrusel-2-text p{
+    font-size: 25px;
+    margin-top: 40px;
+    margin-bottom: 115px;
+}
+.targetaCarrusel-2-text a{
+    font-size: 25px;
+    text-decoration: none;
+    background-color: #fff;
+    padding: 5px 9px;
+    border-radius: 8px;
+    color: #000;
+    width: 200px;
+    margin: 0 auto;
+    text-align: center
+    
+}
+.targetaCarrusel-2-text a:hover{
+    cursor: pointer;
+    background-color: black;
+    color:blanchedalmond
+}
+/*-------------------------style card3--------------------------*/
+.targetaCarrusel-3-img{
+    margin-left: 9%;
+    margin-top: 20px;
+}
+.targetaCarrusel-3-img img {
+    width: 90%;
+    border-radius: 10px;
+}
+.targetaCarrusel-3-text{
+    font-family: 'Roboto', sans-serif;
+    margin-left: 9%;
+    padding: 20px;
+    line-height: 40px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.targetaCarrusel-3-text h3{
+    font-size: 30px;
+}
+.targetaCarrusel-3-text p{
+    font-size: 25px;
+    margin-top: 40px;
+    margin-bottom: 115px;
+}
+.targetaCarrusel-3-text a{
+    font-size: 25px;
+    text-decoration: none;
+    background-color: #fff;
+    padding: 5px 9px;
+    border-radius: 8px;
+    color: #000;
+    width: 200px;
+    margin: 0 auto;
+    text-align: center
+    
+}
+.targetaCarrusel-3-text a:hover{
+    cursor: pointer;
+    background-color: black;
+    color:blanchedalmond
+}
+
+/*--------------------------style Form---------------------*/
+.formulario{
+    width: 50%;
+    background-color: #0e76a8;
+    margin:0 auto;
+    padding: 20px;
+    margin-top: 40px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 20px rgb(131, 118, 118);
+}
+.formulario__label{
+    font-weight: 700;
+    padding: 10px;
+    display: block; 
+    cursor: pointer;
+}
+.formulario__grupo-input{
+    position: relative;
+}
+.formulario__input{
+    width: 100%;
+    background:#fff;
+    border:3px solid #000;
+    border-radius:3px;
+    height:auto;
+    line-height: 45px;
+    padding: 0px 40px 0px 10px;
+    transition: 1s ease all;
+    
+}
+.formulario__input:focus{
+    border:3px solid #0075ff;
+    outline: none;
+    box-shadow: 3px 0px 30px rgba(163, 163, 163, 0.4);
+
+}
+.formulario__input-error{
+    margin-bottom: 0px;
+    font-size: 12px;
+    display: none;
+}
+.formulario__input-error-activo{
+    display: block;
+}
+.formulario__validacion-estado{
+    position: absolute;
+    right: 10px;
+    top: 15px;
+    z-index: 100;
+    font-size: 16px;
+    opacity: 0;
+}
+.formulario__checkbox{
+    margin-right: 10px;
+}
+.formulario__mensaje{
+    height: auto;
+    line-height: 45px;
+    background: #f66860;
+    padding: 0 15px;
+    border-radius: 3px;
+    display:none;
+}
+.formulario__mensaje-activo{
+    display: block;
+}
+.formulario__grupo-btn-enviar{
+    display: flex;
+    flex-direction: column;
+ align-items: center;   
+}
+.formulario__btn{
+    margin: 10px;
+    height: 40px;
+    line-height: 40px;
+    width: 30%;
+    border: none;
+    font-weight: bold;
+    color: #fff;
+    background: #000;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 1s ease all;
+}
+.formulario__btn:hover{
+    box-shadow: 3px 0px 30px rgba(163, 163, 163, 1);
+}
+.formulario__mensaje-exito{
+    color: #119200;
+    font-weight: bold;
+    font-size: 14px;
+    display: none;
+}
+.formulario__mensaje-exito-activo{
+    display: block;
+}
+.formulario__grupo-correcto .formulario__validacion-estado{
+    color:#1ed12d;
+    opacity: 1;
+}
+.formulario__grupo-incorrecto .formulario__validacion-estado{
+    color:#bb2929;
+    opacity: 1;
+}
+.formulario__grupo-incorrecto .formulario__label{
+    color:#bb2929;
+}
+.formulario__grupo-incorrecto .formulario__input{
+    border: 3px solid #F0A500 ;
+}
+/*------------------------------styles footer---------------------*/ 
+.footer{
+    width: 100%;
+    height: 10vh;
+    background:#000;
+    margin-top: 50px;
+
+}
+
+.footer__icon{
+    color: #fff;
+    font-size: 30px;
+}
+.footer__cont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    gap: 30px;
+    border-radius: 5px;
+}
+.facebook:hover{
+    background-color: #3b5998 ;
+    padding:5px;
+}
+.linkedin:hover{
+    background-color:  #0e76a8 ;
+    padding: 5px;
+}
+.github:hover{
+    background-color:  #e64539 ;
+    padding: 5px;
+}
+/*-----------------------responsive max900px----------------------*/
+@media screen and (max-width:900px){
+    .main__info img{
+        width: 300px;
+    }
+    .main__info-foto{
+        margin-top: -140px;
+    }
+    .form__contain{
+        min-width: 380px;
+    }
+    .targetaCarrusel-1-text a{
+        margin-top: 48px;
+    }
+    .formulario{
+        min-width:450px ;
+    }
+  
+
+}
+@media screen and (max-width:600px){
+    .formulario{
+        width: 90%;
+        min-width:300px ;
+    }
+    .main__info img{
+        width: 250px;
+    }
+    .main__info-foto{
+        margin-top: -120px;
+    }
+    .main__img h2{
+        font-size: 40px;
+    
+    }
+    .main__info h3{
+        font-size: 35px;
+        margin-top: 20px;
+        
+    }
+    .main__info p{
+        font-size: 20px;
+        margin-bottom: 200px;
+    
+    }
+    .formulario__mensaje{
+        height: auto;
+        line-height: 25px;
+        margin: 8px;}
+    .container__header-menu{
+        display: none;
+    }
+    .container__header-iconMenu{
+        display: block;
+        font-size: 40px;
+        color: #fff;
+        display: block;
+        margin:20px;
+    }
+
+}
+
